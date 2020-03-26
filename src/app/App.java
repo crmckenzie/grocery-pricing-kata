@@ -6,9 +6,9 @@ import java.util.List;
 public class App {
     public static void main(String[] args) throws Exception {
         List<Product> products = new ArrayList<Product>();
-        products.add(new Product("Beans", 2, 200));
-
         Cart cart = new Cart(products);
+
+        products.add(new Product("Beans", 2, 200));
 
         int netTotal = cart.CalculateNetTotal();
 
